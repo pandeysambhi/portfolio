@@ -6,8 +6,12 @@
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  margin-top: 1rem;
   background-color: teal;
-  margin-left: auto;
+  border: 1px solid white;
+  border-radius: 40px;
 }
 
 .nav {
@@ -16,6 +20,8 @@
   background-color: teal;
   color: wheat;
   font-size: medium;
+  border: 1px solid white;
+  border-radius: 40px;
 }
 .nav ul {
   list-style: none;
@@ -25,6 +31,8 @@
   align-items: center;
   padding: 10px;
   background-color: teal;
+  border: 1px solid white;
+  border-radius: 40px;
 }
 .nav ul li {
   padding: 0.5rem;
@@ -38,6 +46,24 @@
   text-align: center;
   margin-top: 1rem;
 }
+.heading {
+  font-size: 5rem;
+  margin-top: 4rem;
+  animation: heading 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes heading {
+  from {
+    text-shadow: 0 0 10px wheat, 0 0 20px wheat, 0 0 30px #008080,
+      0 0 40px #008080, 0 0 50px #008080, 0 0 60px #008080, 0 0 70px #008080;
+  }
+
+  to {
+    text-shadow: 0 0 20px wheat, 0 0 30px #008080, 0 0 40px #008080,
+      0 0 50px #008080, 0 0 60px #008080, 0 0 70px #008080, 0 0 80px #008080;
+  }
+}
+
 .footer {
   height: auto;
   width: 100%;
