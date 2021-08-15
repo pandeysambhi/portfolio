@@ -64,13 +64,88 @@
   }
 }
 
-.footer {
+.skill-section {
+  margin-top: 3rem;
+}
+
+.skills {
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.skills-container {
+  width: 30%;
+  background-color: wheat;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.skills-container p {
+  background-color: teal;
+  display: inline-block;
+}
+.skill {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+}
+.react {
+  width: 90%;
+  background-color: teal;
+}
+
+.html {
+  width: 80%;
+  background-color: teal;
+}
+.css {
+  width: 70%;
+  background-color: teal;
+}
+
+.javascript {
+  width: 80%;
+  background-color: teal;
+}
+.node {
+  width: 70%;
+  background-color: teal;
+}
+.java {
+  width: 70%;
+  background-color: teal;
+}
+.springboot {
+  width: 50%;
+  background-color: teal;
+}
+.microservices {
+  width: 50%;
+  background-color: teal;
+}
+
+.projects {
+  margin-top: 2rem;
+}
+
+.experience {
+  margin-top: 2rem!;
+}
+
+footer {
   height: auto;
   width: 100%;
   background-color: teal;
   color: wheat;
   font-size: small;
-  position: absolute;
+  position: relative;
   bottom: 0px;
 }
 
