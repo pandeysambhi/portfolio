@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/511cb3b9e5.js"></script>
     <title>Sambhavi's Portfolio</title>
 </head>
 <body>
     <header class="header">
                <nav class="nav">
                    <ul>
-                       <li>About me</li>
-                       <li>Projects</li>
-                       <li>Contact</li>
+                       <li><a href="#main">About</a></li>
+                       <li><a href="#skil">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                       <li><a href="#footer">Contact</a></li>
                    </ul>
                </nav>
     </header>
-    <main class="main">
-        <section class="about">
+    <main class="main" id="main">
+        <section class="about" id="about">
             <h1 class="heading">Web Developer</h1>
             <p>Hey, I am web developer with 2+ years of IT experience.</p>
         </section>
-        <section class="skill-section" >
+        <section class="skill-section" id="skill">
            <h2>Here is What I know!</h2> 
            <div class="skills">
            <div class="skills-container">
@@ -38,7 +40,7 @@
             <div class="skill javascript"><p>Javascipt</p></div>
             </div>
             <div class="skills-container">
-            <div class="skill node"><p>Node</p></div>
+            <div class="skill node"><p>Node JS</p></div>
             </div>
             <div class="skills-container">
             <div class="skill java"><p>Java</p></div>
@@ -47,31 +49,21 @@
             <div class="skill springboot"><p>Springboot</p></div>
             </div>
             <div class="skills-container">
-            <div class="skill microservices"><p>Microservices</p></div>
+            <div class="skill microservices" id="skil"><p>Microservices</p></div>
             </div>
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects"  id="projects" >
             <h2>What I can do!</h2>
             <div class="project-cards">
-                <div class="card">
-                    <p>Hello</p>
+                <div class="card"> </div>
+                <div class="card">   </div>
+                 <div class="card"> </div>
                 </div>
-               
-                <div class="card">
-                    <p>Hello</p>
-                </div>
-                
-                <div class="card">
-                    <p>Hello</p>
-                </div>
-                </div>
-            
-           
-            
-        </section>
-        <section class="experience">
+             </section>
+       
+             <section class="experience" id="experience">
             <h2>My Journey so Far!</h2>
             <div class="timeline">
                 <div class="container left">
@@ -100,12 +92,12 @@
     </main>
 
    
-    <footer class="footer">
+    <footer class="footer" id="footer">
      <h2>Find me on social media</h2>
      <ul class="footer-links">
-         <li>Github</li>
-         <li>Twitter</li>
-         <li>Linkedin</li>
+         <li><a href="https://github.com/pandeysambhi" target="_blank"><i class="fa fa-github fa-3x"></i></></link>
+         <li><a href="https://twitter.com/pandeysambhi" target="_blank"><i class="fa fa-twitter fa-3x" ></i></a></i></li>
+         <li><a href="https://www.linkedin.com/in/sambhavi-pandey-05a35b142/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
      </ul>
     </footer>
     

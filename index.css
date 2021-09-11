@@ -41,6 +41,13 @@
   font-weight: bold;
   background-color: teal;
 }
+
+.nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  background-color: teal;
+  transition: 1s;
+}
 .main {
   color: wheat;
   text-align: center;
@@ -123,11 +130,11 @@
   background-color: teal;
 }
 .springboot {
-  width: 50%;
+  width: 60%;
   background-color: teal;
 }
 .microservices {
-  width: 50%;
+  width: 60%;
   background-color: teal;
 }
 
@@ -145,11 +152,11 @@
 
 .card {
   margin-top: 2rem;
-  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
   transition: 0.3s;
   background-color: teal;
-  width: 300px;
-  height: 350px;
+  width: 280px;
+  height: 320px;
 }
 
 .card p {
@@ -162,18 +169,19 @@
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.7);
-  transform: scale(1.1) translate(20px, -20px);
+  transform: scale(1.1) translate(10px, -10px);
+  transition: 0.8s;
 }
 
 .experience {
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .timeline::after {
@@ -301,7 +309,7 @@ footer {
   width: 100%;
   background-color: teal;
   color: wheat;
-  font-size: small;
+  font-size: lrge;
   position: relative;
   bottom: 0px;
 }
@@ -319,10 +327,12 @@ footer {
 }
 
 .footer h2 {
+  padding: 20px;
   text-align: center;
   background-color: teal;
 }
 
-.footer-links li {
+.footer-links li a i {
   background-color: teal;
+  color: wheat;
 }
