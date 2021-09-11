@@ -23,6 +23,10 @@
   border: 1px solid white;
   border-radius: 40px;
 }
+
+.mobile-nav {
+  display: none;
+}
 .nav ul {
   list-style: none;
   display: flex;
@@ -378,7 +382,9 @@ footer {
 
   .heading {
     font-size: 4rem;
-    margin-top: 6rem;
-    animation: heading 1s ease-in-out infinite alternate;
+  }
+
+  .nav ul li {
+    font-size: large;
   }
 }
