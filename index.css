@@ -27,6 +27,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
@@ -80,7 +81,7 @@
   width: 70%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
@@ -97,6 +98,8 @@
 .skills-container p {
   background-color: teal;
   display: inline-block;
+  border-radius: 20px;
+  margin: 0 10px;
 }
 .skill {
   padding-top: 8px;
@@ -104,36 +107,52 @@
   border-radius: 20px;
 }
 .react {
+  display: flex;
+  justify-content: space-between;
   width: 90%;
   background-color: teal;
 }
 
 .html {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   background-color: teal;
 }
 .css {
+  display: flex;
+  justify-content: space-between;
   width: 70%;
   background-color: teal;
 }
 
 .javascript {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   background-color: teal;
 }
 .node {
+  display: flex;
+  justify-content: space-between;
   width: 70%;
   background-color: teal;
 }
 .java {
+  display: flex;
+  justify-content: space-between;
   width: 70%;
   background-color: teal;
 }
 .springboot {
+  display: flex;
+  justify-content: space-between;
   width: 60%;
   background-color: teal;
 }
 .microservices {
+  display: flex;
+  justify-content: space-between;
   width: 60%;
   background-color: teal;
 }
@@ -276,34 +295,6 @@
   color: teal;
 }
 
-@media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
-
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  .left::after,
-  .right::after {
-    left: 15px;
-  }
-
-  .right {
-    left: 0%;
-  }
-}
-
 footer {
   height: auto;
   width: 100%;
@@ -335,4 +326,59 @@ footer {
 .footer-links li a i {
   background-color: teal;
   color: wheat;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .skills {
+    margin-left: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .skills-container {
+    width: 70%;
+    background-color: wheat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+  }
+  .skills-container p {
+    font-size: small;
+  }
+
+  .heading {
+    font-size: 4rem;
+    margin-top: 6rem;
+    animation: heading 1s ease-in-out infinite alternate;
+  }
 }
