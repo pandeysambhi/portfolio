@@ -12,13 +12,25 @@
     <header class="header">
                <nav class="nav">
                  <ul>
-                      <li class="mobile-nav"><i class="fa fa-bars fa-3x"></i></li>
-                       <li class="desktop-nav"><a href="#main">About</a></li>
-                       <li class="desktop-nav"><a href="#projects">Projects</a></li>
-                        <li class="desktop-nav"><a href="#experience">Experience</a></li>
-                       <li class="desktop-nav"><a href="#footer">Contact</a></li>
+                     
+                       <li ><a href="#main">About</a></li>
+                       <li ><a href="#projects">Projects</a></li>
+                        <li ><a href="#experience">Experience</a></li>
+                       <li ><a href="#footer">Contact</a></li>
                    </ul>
                </nav>
+                <nav class="mobile-nav">
+                <span onClick="openSideNav()" style="cursor:pointer"><i class="fa fa-bars fa-3x"></i></span>
+                    <div  class="sidenav"  id="mySidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                        <a href="#main">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#footer">Contact</a>
+                    
+                </div> 
+                </nav>
     </header>
     <main class="main" id="main">
         <section class="about" id="about">
@@ -50,7 +62,7 @@
             <div class="skill springboot"><p>Springboot</p><p>60%</p></div>
             </div>
             <div class="skills-container">
-            <div class="skill microservices" id="projects"><p>Microservices</p><p>50%</p></div>
+            <div class="skill express" id="projects"><p>Express</p><p>70%</p></div>
             </div>
             </div>
         </section>
@@ -102,5 +114,14 @@
      </ul>
     </footer>
     
+    <script>
+        function openSideNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
